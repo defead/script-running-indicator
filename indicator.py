@@ -8,9 +8,9 @@ import subprocess
 import time
 
 INDICATOR_NAME = 'script-running-indicator'
-INDICATOR_ICON_STOPPED = os.path.abspath('stopped.svg')
-INDICATOR_ICON_RUNNING = os.path.abspath('running.svg')
-INDICATOR_ICON_STARTING = os.path.abspath('starting.svg')
+INDICATOR_ICON_STOPPED = os.path.dirname(__file__) + '/' + 'stopped.svg'
+INDICATOR_ICON_RUNNING = os.path.dirname(__file__) + '/' + 'running.svg'
+INDICATOR_ICON_STARTING = os.path.dirname(__file__) + '/' + 'starting.svg'
 SCRIPT_TO_RUN = ['sleep', '30']
 
 
